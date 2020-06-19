@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <title>Button with special hover effects</title>
+</head>
+<style>
+   *{
+       margin: 0;
+       padding: 0;
+   }
+
+   body{
+       background-color: #e3edf7;
+   }
+
+   h1{
+        font-family: sans-serif;
+       font-weight: normal;
+       font-size: 25PX;
+       letter-spacing: 4px;
+       padding: 200px 0 100px;
+       color: #fff;
+       text-align: center;
+   }
+   .icon{
+       display: flex;
+       justify-content: center;
+   
+   }
+   a{
+    display: flex;
+    background-color: #e3edf7;
+    height: 75px;
+    width: 75px;
+    margin: 0 15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;   
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                 -6px -6px 10px -1px rgba(255, 255, 255, 0.7) ;
+   }
+
+   a:hover{
+       box-shadow: inset 6px 6px 10px -1px rgba(0,0,0,0.15),
+                inset -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+                border: 1px solid rgba(119, 119, 119,0.1);
+                transform: translateY(2px);
+                transition: transform .s;
+   }
+     a:hover .fa-facebook{ 
+        color: rgba(0, 0, 255, 0.842);
+   }
+   
+   a:hover .fa-twitter{ 
+        color: rgb(34, 199, 240);
+   }
+
+   a:hover .fa-whatsapp{ 
+        color:#4fce5d;
+   }
+
+   a:hover .fa-instagram{ 
+        color: rgba(241, 22, 22, 0.829);
+   }
+
+   a:hover .fa-youtube{ 
+        color: rgb(255, 0, 0);
+   }
+
+   a i{
+       font-size: 35px;
+       color: #777;
+   }
+   @media only screen and (max-width:528px ) {
+    a{
+    display: flex;
+    background-color: #e3edf7;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+   }
+   a i {
+       font-size: 30px;
+   }
+   }
+</style>
+<body>
+    <h1>FOLLOW US ON SOCIAL MEDIA</h1>
+     <div class="icon">
+         <a  class="facebook" href="facebook.com"><i class="fab fa-facebook"></i></a>
+         <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+         <a href="whatsapp.web"><i class="fab fa-whatsapp"></i></a>
+         <a href="instagram.com"><i class="fab fa-instagram"></i></a>
+         <a href="youtube.com"><i class="fab fa-youtube"></i></a>
+     </div>
+</body>
+</html>
